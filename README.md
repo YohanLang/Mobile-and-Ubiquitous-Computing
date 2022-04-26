@@ -1,4 +1,4 @@
-![logo](img/logo.png "logo")
+![logo](pic/logo.png "logo")
 
 # Deep Tour
 
