@@ -208,9 +208,9 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
                     cropToFrameTransform.mapRect(location);
 
-
-                    finalString = finalString + "More info on: https://en.wikipedia.org/wiki/" + result.getTitle()+"\n";
-
+                    if (!finalString.contains(result.getTitle())) {
+                      finalString = finalString + "More info on: https://en.wikipedia.org/wiki/" + result.getTitle() + "\n";
+                    }
 
                     result.setLocation(location);
                     mappedRecognitions.add(result);
