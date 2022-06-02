@@ -42,9 +42,12 @@ import android.view.Surface;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.WindowManager;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
@@ -54,7 +57,7 @@ import org.tensorflow.lite.examples.detection.env.ImageUtils;
 import org.tensorflow.lite.examples.detection.env.Logger;
 
 public abstract class CameraActivity extends AppCompatActivity
-    implements OnImageAvailableListener,
+    implements OnImageAvailableListener, AdapterView.OnItemSelectedListener,
         Camera.PreviewCallback,
         CompoundButton.OnCheckedChangeListener,
         View.OnClickListener {
@@ -65,6 +68,7 @@ public abstract class CameraActivity extends AppCompatActivity
   private static final String PERMISSION_CAMERA = Manifest.permission.CAMERA;
   protected int previewWidth = 0;
   protected int previewHeight = 0;
+  public String TF_OD_API_MODEL_FILE;
   private boolean debug = false;
   private Handler handler;
   private HandlerThread handlerThread;
@@ -93,6 +97,20 @@ public abstract class CameraActivity extends AppCompatActivity
     getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
     setContentView(R.layout.tfe_od_activity_camera);
+
+
+    Spinner spinner = findViewById(R.id.spinner_model);
+    ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.models, android.R.layout.simple_spinner_item);
+    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+    spinner.setAdapter(adapter);
+    spinner.setOnItemSelectedListener(this);
+    if (spinner.getSelectedItemPosition() == 0){
+      TF_OD_API_MODEL_FILE = "detect.tflite";
+    }
+    else{
+      TF_OD_API_MODEL_FILE = "detectperson.tflite";
+    }
+
     Toolbar toolbar = findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
     getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -168,7 +186,17 @@ public abstract class CameraActivity extends AppCompatActivity
     plusImageView.setOnClickListener(this);
     minusImageView.setOnClickListener(this);
   }
-
+@Override
+public void onItemSelected(AdapterView<?> parent, View view, int position, long id){
+  String text = parent.getItemAtPosition(position).toString();
+  if (position == 0){
+    TF_OD_API_MODEL_FILE = "detect.tflite";
+  }
+  else {
+    TF_OD_API_MODEL_FILE ="detectperson.tflite";
+  };
+  setFragment();
+}
   protected int[] getRgbBytes() {
     imageConverter.run();
     return rgbBytes;

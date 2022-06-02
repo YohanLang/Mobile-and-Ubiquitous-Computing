@@ -45,6 +45,14 @@
                     android:contentDescription="@string/todo"
                     android:src="@drawable/tfl2_logo" />
             </androidx.appcompat.widget.Toolbar>
+
+            <Spinner
+                android:id="@+id/spinner_model"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:background="#FFFEFE"
+                android:translationX="200dp"
+                android:translationY="600dp" />
         </FrameLayout>
 
     </RelativeLayout>
