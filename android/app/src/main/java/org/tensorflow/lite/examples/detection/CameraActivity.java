@@ -68,6 +68,7 @@ public abstract class CameraActivity extends AppCompatActivity
   private static final String PERMISSION_CAMERA = Manifest.permission.CAMERA;
   protected int previewWidth = 0;
   protected int previewHeight = 0;
+  protected int spinner_id = 0;
   public String TF_OD_API_MODEL_FILE;
   private boolean debug = false;
   private Handler handler;
@@ -105,7 +106,7 @@ public abstract class CameraActivity extends AppCompatActivity
     spinner.setAdapter(adapter);
     spinner.setOnItemSelectedListener(this);
     if (spinner.getSelectedItemPosition() == 0){
-      TF_OD_API_MODEL_FILE = "detect.tflite";
+      TF_OD_API_MODEL_FILE = "detect0.tflite";
     }
     else{
       TF_OD_API_MODEL_FILE = "detectperson.tflite";
@@ -190,11 +191,12 @@ public abstract class CameraActivity extends AppCompatActivity
 public void onItemSelected(AdapterView<?> parent, View view, int position, long id){
   String text = parent.getItemAtPosition(position).toString();
   if (position == 0){
-    TF_OD_API_MODEL_FILE = "detect.tflite";
+    TF_OD_API_MODEL_FILE = "detect0.tflite";
   }
   else {
-    TF_OD_API_MODEL_FILE ="detectperson.tflite";
+    TF_OD_API_MODEL_FILE ="detect1.tflite";
   };
+  spinner_id = position;
   setFragment();
 }
   protected int[] getRgbBytes() {

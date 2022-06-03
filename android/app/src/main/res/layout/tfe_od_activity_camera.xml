@@ -50,8 +50,8 @@
                 android:id="@+id/spinner_model"
                 android:layout_width="200dp"
                 android:layout_height="48dp"
-                android:background="#FFFEFE"
-                android:translationX="200dp"
+                android:background="#FFFFFF"
+                android:focusableInTouchMode="false"
                 android:translationY="600dp" />
         </FrameLayout>
 

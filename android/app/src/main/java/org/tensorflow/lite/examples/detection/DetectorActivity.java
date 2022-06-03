@@ -16,6 +16,7 @@
 
 package org.tensorflow.lite.examples.detection;
 
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
@@ -68,7 +69,6 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   private Integer sensorOrientation;
 
   private Detector detector;
-
   private long lastProcessingTimeMs;
   private Bitmap rgbFrameBitmap = null;
   private Bitmap croppedBitmap = null;
@@ -208,11 +208,20 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                     canvas.drawRect(location, paint);
 
                     cropToFrameTransform.mapRect(location);
-
-                    if (!finalString.contains(result.getTitle())) {
-                      finalString = finalString + "More info on: https://en.wikipedia.org/wiki/" + result.getTitle() + "\n";
+                    Resources res = getResources();
+                    String[] labels;
+                    if (spinner_id == 0){
+                      labels = res.getStringArray(R.array.model0);
                     }
-
+                    else{
+                       labels = res.getStringArray(R.array.model1);
+                    }
+                    if (!finalString.contains(result.getTitle())) {
+                      for (String label : labels){
+                        if (label.contains(result.getTitle()))
+                          finalString = finalString + label + "More info on: https://en.wikipedia.org/wiki/" + result.getTitle() + "\n\n";
+                      }
+                    }
                     result.setLocation(location);
                     mappedRecognitions.add(result);
                   }

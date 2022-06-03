@@ -2,5 +2,131 @@
     <string name="tfe_od_app_name" translation_description="DeepTour app [CHAR_LIMIT=40]">DeepTour</string>
     <string name="tfe_od_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
     <string name="todo">TODO</string>
-    <string-array name="models"><item>Gyeongbokgung</item><item>Person</item></string-array>
+    <string-array name="models"><item>Gyeongbokgung</item><item>Yeouido</item></string-array>
+    <string-array name="model0"><item>Geunjeongjeon
+근정전\n
+The throne hall\n
+Originally built in 1395 under King Taejo\n
+Burned down in 1592 during Japanese invasion\n
+        Rebuilt in 1867\n</item>
+<item>
+Gwanghwamun
+광화문\n
+The Main and South Gate\n
+Originally built in 1395 under King Taejo\n
+Burned down in 1592 during Japanese invasion\n
+Rebuilt in 1867\n
+Moved to the south during Japanese occupation (1926)\n
+</item>
+        <item>
+Heungnyemun
+흥례문\n
+The Second Inner Gate\n
+        </item>
+        <item>
+Geunjeongmun
+근정문\n
+The Third Inner Gate\n
+        </item>
+        <item>
+Gyeonghoeru
+경회루\n
+Royal Banquet Hall\n
+Originally built in 1412 under King Taejong\n
+Burned down in 1592 during Japanese invasion\n
+Rebuilt in 1867\n
+48 stone pillars\n
+        </item>
+        <item>
+Hyangwonjeong
+향원정\n
+Pavilion of Far-Reaching-Fragrance\n
+Built in 1873 under King Gojong\n
+Artificial island on lake Hyangwonji\n
+Linked to shore by Chwihyanggyo ("Bridge Intoxicated with Fragrance")\n
+        </item>
+        <item>
+Hanbok
+한복\n
+Traditional korean outfit\n
+Trace back to the Three Kingdoms of Korea period\n
+(1st century BC–7th century AD)\n
+Roots from northern Korea and Manchuria\n
+        </item>
+        <item>
+Naegeumwi
+ 내금위\n
+Military unit during the Joseon Dynasty\n
+between 1407 and 1910\n
+60-200 guards were present in the palace, protecting the king and the royal family.\n
+        </item>
+        <item>
+National_Folk_Museum
+국립민속박물관\n
+Established in 1945 by the U.S. Government\n
+98,000 artifacts and three main exhibition halls\n
+        </item>
+        <item>
+Rank_stone\n
+Stones indicating rank in front of Geunjeongjeon Hall\n
+During official ceremonies, court officials would line up according to rank using these\n
+</item></string-array>
+    <string-array name="model1"><item>Parc1\n
+Parc1 towers\n
+Tallest stands at 333 m (1,093 ft) with 69 floors\n
+$1.5-billion shopping/hotel/office complex\n
+Designed by architect Lord Richard Rogers\n
+    </item>
+        <item>
+IFC
+서울국제금융센터\n
+International Finance Center\n
+Complex of offices towers malls and hotels\n
+One of the first large-scale developments in Korea\n
+Officially launched in 2005, completed in 2012\n
+2nd tallest building in Seoul, 6th tallest in Korea.\n
+Designed by Arquitectonica\n
+        </item>
+        <item>
+FKI\n
+Federation of korean industries head office\n
+245 m (804 ft) high, 5th tallest building in Seoul\n
+Completed in 2014\n
+Designed by the American firm Adrian Smith + Gordon Gill Architecture\n
+        </item>
+        <item>
+S-trenue\n
+Mixed office and apartments building\n
+Designed by firm Mass Studies\n
+Completed in 2009\n
+        </item>
+        <item>
+Conrad\n
+Luxury five-star hotel part of the IFC complex\n
+Belongs of Hilton Hotel Group\n
+434 guestrooms and suites spread throughout 38-stories\n
+        </item>
+        <item>
+63\n
+63 SQUARE (formerly Hanwha 63 City)\n
+249 meters (817 ft) high\n
+Tallest gold-clad structure in the world\n
+Structure is based on the Hanja character for person or human being (人)\n
+Designed by Harry D. Som and Helen W. Som\n
+        </item>
+        <item>
+LG\n
+LG twin towers\n
+143 meters for 34 floors\n
+Completed in 1987\n
+Designed by firm Skidmore, Owings and Merrill LLP\n
+        </item>
+        <item>
+National_Assembly\n
+National Assembly of the Republic of Korea\n
+Consists of at least 200 members\n
+Completed in 1975\n
+The plenary chamber has seating for 400 people\n
+(In preparation for new lawmakers in case Korean reunification occurs)\n
+</item></string-array>
 </resources>

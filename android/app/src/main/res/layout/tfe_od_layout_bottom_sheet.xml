@@ -31,11 +31,13 @@
 
     <TextView
         android:id="@+id/label_info"
-        android:layout_width="match_parent"
+        android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:autoLink="web"
         android:linksClickable="true"
-        android:text="test" />
+        android:text="test"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="12sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,7 +50,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Frame"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/frame_info"
@@ -57,7 +60,8 @@
             android:layout_marginTop="10dp"
             android:gravity="right"
             android:text="640*480"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:visibility="gone" />
     </LinearLayout>
 
     <LinearLayout
@@ -71,7 +75,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Crop"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/crop_info"
@@ -80,15 +85,16 @@
             android:layout_marginTop="10dp"
             android:gravity="right"
             android:text="640*480"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:visibility="gone" />
     </LinearLayout>
-
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone">
 
         <TextView
             android:id="@+id/inference"
@@ -118,7 +124,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone">
 
         <TextView
             android:layout_width="wrap_content"
