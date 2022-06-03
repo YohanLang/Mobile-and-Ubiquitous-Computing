@@ -12,3 +12,7 @@ Project for SNU course "Mobile and Ubiquitous Computing"
 
 - https://pjreddie.com/darknet/yolo/
 - https://labelstud.io/blog/Quickly-Create-Datasets-for-Training-YOLO-Object-Detection.html
+
+## Notes
+
+Compatibility issues with older device
