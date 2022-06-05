@@ -8,7 +8,10 @@
 - [YOLO & Label Studio](#yolo--label-studio)
 - [Notes](#notes)
 ## Description
-Project for SNU course "Mobile and Ubiquitous Computing"
+Flyers are the most common way to get information on the landmark you’re visiting, but you never know what to do with the flyer afterwards.
+Wikipedia is weightless and more detailed but has fewer links to the actual landmark (where is what ? What is what?)
+Moreover, the mentioned things are not interactive. 
+Our project, DeepTour, solves the described problems.
 
 ## Project Plan
 
