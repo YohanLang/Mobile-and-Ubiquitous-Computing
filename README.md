@@ -4,6 +4,7 @@
 ## Table of content
 - [Table of content](#table-of-content)
 - [Description](#description)
+- [Installation guide](#installation-guide)
 - [Project Plan](#project-plan) 
 - [YOLO & Label Studio](#yolo--label-studio)
 - [Notes](#notes)
@@ -11,7 +12,13 @@
 Flyers are the most common way to get information on the landmark you’re visiting, but you never know what to do with the flyer afterwards.
 Wikipedia is weightless and more detailed but has fewer links to the actual landmark (where is what ? What is what?)
 Moreover, the mentioned things are not interactive. 
-Our project, DeepTour, solves the described problems.
+Our project, DeepTour, solves the described problems
+## Installation guide
+1. Clone the repository
+2. Install [Android Studio](https://developer.android.com/studio)
+3. Create the project from the repository
+4. Plug in the mobile device on which you want to run the application
+5. Run the project
 
 ## Project Plan
 
