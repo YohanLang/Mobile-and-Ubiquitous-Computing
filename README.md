@@ -19,9 +19,9 @@ Moreover, the mentioned things are not interactive.
 Our project, DeepTour, solves the described problems
 
 ## Demo
-![](./pic/img1.jpg)
-![](./pic/img2.jpg)
-![](./pic/img3.jpg)
+![](pic/img1.jpg)
+![](pic/img2.jpg)
+![](pic/img3.jpg)
 
 ## Installation guide
 1. Clone the repository
