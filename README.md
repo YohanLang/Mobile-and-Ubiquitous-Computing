@@ -18,11 +18,10 @@ Wikipedia is weightless and more detailed but has fewer links to the actual land
 Moreover, the mentioned things are not interactive. 
 Our project, DeepTour, solves the described problems
 
-##Demo
-<video width="480" height="320" controls="controls">
-  <source src="./Presentation/Final_presentation_video.mp4" type="video/mp4">
-</video>
-
+## Demo
+![](./pic/img1.jpg)
+![](./pic/img2.jpg)
+![](./pic/img3.jpg)
 
 ## Installation guide
 1. Clone the repository
