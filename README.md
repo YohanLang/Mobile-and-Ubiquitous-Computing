@@ -1,18 +1,29 @@
 ![logo](pic/logo.png "logo")
 
 # Deep Tour
+
 ## Table of content
 - [Table of content](#table-of-content)
-- [Description](#description)
+- [Motivation](#motivation)
+- [Demo](#demo)  
 - [Installation guide](#installation-guide)
 - [Project Plan](#project-plan) 
 - [YOLO & Label Studio](#yolo--label-studio)
-- [Notes](#notes)
-## Description
+- [How to contribute](#how-to-contribute)
+- [Authors](#Authors)
+
+## Motivation
 Flyers are the most common way to get information on the landmark you’re visiting, but you never know what to do with the flyer afterwards.
 Wikipedia is weightless and more detailed but has fewer links to the actual landmark (where is what ? What is what?)
 Moreover, the mentioned things are not interactive. 
 Our project, DeepTour, solves the described problems
+
+##Demo
+<video width="480" height="320" controls="controls">
+  <source src="./Presentation/Final_presentation_video.mp4" type="video/mp4">
+</video>
+
+
 ## Installation guide
 1. Clone the repository
 2. Install [Android Studio](https://developer.android.com/studio)
@@ -29,6 +40,12 @@ Our project, DeepTour, solves the described problems
 - https://pjreddie.com/darknet/yolo/
 - https://labelstud.io/blog/Quickly-Create-Datasets-for-Training-YOLO-Object-Detection.html
 
-## Notes
+## How to contribute
+If you find any bug or have suggestion on improvement, you can:
+1. Fork the server or the bot repository, make the changes and then create a pull request
+2. Open the issue with the description of the bug/suggestion
 
-Compatibility issues with older device
+## Authors
+Andrei Palaev <br/>
+Norman Doret <br/>
+Yohan Lang
