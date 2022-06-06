@@ -5,6 +5,7 @@
 ## Table of content
 - [Table of content](#table-of-content)
 - [Motivation](#motivation)
+_ [Description](#description)  
 - [Demo](#demo)  
 - [Installation guide](#installation-guide)
 - [Project Plan](#project-plan) 
@@ -17,6 +18,16 @@ Flyers are the most common way to get information on the landmark you’re visit
 Wikipedia is weightless and more detailed but has fewer links to the actual landmark (where is what ? What is what?)
 Moreover, the mentioned things are not interactive. 
 Our project, DeepTour, solves the described problems
+
+## Description
+Using small context dependent CNNs, we provide an interactive experience for specific landmarks.
+The application is scalable and lightweight and respects your privacy:
+1) A data pipeline built on Google Cloud platform makes it extremely easy to add new models to the library
+2) The landmark specific approach allows smaller training sets and models 
+3) Even devices with low camera resolution can run the app
+4) The models size allows to run them offline without latency
+5) The camera feed is not recorded
+   
 
 ## Demo
 ![](pic/img1.jpg)
